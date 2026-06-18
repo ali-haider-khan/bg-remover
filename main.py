@@ -15,7 +15,8 @@ app.add_middleware(
 )
 
 # Render has 1GB disk space, so we can use the high-quality model safely!
-session = new_session("u2net")
+# session = new_session("u2net")
+session = new_session("u2netp")
 
 @app.get("/")
 def home():
